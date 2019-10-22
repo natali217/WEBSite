@@ -1,16 +1,21 @@
-/**{
-  box-sizing: border-box;
-}*/
+* { box-sizing: border-box }
+
 body {
-  padding: 0;
-  margin: 0;
-  font-size: 20px;
-  font-family: tahoma;
-  position: relative;
-  background-image: url("pictures/back.jpg");
-background-size: contain;
+  font-family: 'Coming Soon', cursive;
+  transition: background 1s ease;
+  background: #DC143C;
 }
 
+p {
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  font-weight:bolder;
+}
+
+a {
+  text-decoration: none;
+}
 header {
   position: relative;
   background-color: black;
@@ -35,53 +40,14 @@ header video {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+.navbar{
+  opacity: 0.9;
 
-.nav-link {
-  margin-right: 1em !important;
 }
 
-.sections{
-  padding-top:70px;
-  padding-bottom:50%;
-  margin:100%;
+.footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  padding-top: 15px;
+  margin-top: 10px;
 }
-
-
-/*
-#myVideo{
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-.content{
-  position: fixed;
-  bottom: 0;
-  background: rgba(0,0,0,0.5)
-  color:#f24f16;
-  width: 100%
-  padding:5%;
-}
-
-#myBtn{
-  width: 100%;
-  font-size: 18px;
-  background: #f24f16;
-  border: none;
-  color:black;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.5s easy-in;
-}
-
-#myBtn:hover{
-  background: grey;
-  color:white;
-}*/
-
-
-
-
-

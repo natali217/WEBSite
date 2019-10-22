@@ -5,149 +5,116 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<link rel = "stylesheet" href = "main.css" type = "text/css"/>
+		<link rel = "stylesheet" href = "main.css" type = "text/css">
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		
-	</head>
-	<!-- <body>
-		
-		<video autoplay muted loop id="myVideo" >
-			<source src="badm.mp4" type="video/mp4">
-		</video>
-		<div class="content">
-			<button id="myBtn" onclick="myFunction()">
-				Pause
-			</button>
-		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2542/jquery.scrollie.min_1.js"></script>
 
-		<script type="text/javascript">
-			var video = document.getElementById("myVideo");
-			var btn = document.getElementById("myBtn");
 
-			function myFunction(){
-				if(video.paused){
-					video.play();
-					btn.innerHTML = "Pause";
-				}else{
-					video.pause();
-					btn.innerHTML = "Play"; 
-				}
-			}
+		<script >
+			$( window ).ready(function() {
+				var wHeight = $(window).height();
+			$('.slide')
+      			.height(wHeight)
+      			.scrollie({
+       				 	scrollOffset : -50,
+        					scrollingInView : function(elem) {
+                   			var bgColor = elem.data('background');
+          				$('body').css('background-color', bgColor);
+          				}
+      				});
+
+  				});
 		</script>
-		 -->
-		
-		<!-- <nav class="navbar navbar-expand-md">
-	  		<a class="navbar-brand"><img src="pictures/logo3.jpg" weigh = "20px" height="20px">Badminton</a>
-	  			<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-	    				<span class="navbar-toggler-icon"></span>
-	  			</button>
 
-	  		<div class="collapse navbar-collapse" id="main-navigation">
-	    		<ul class="navbar-nav">
-	     			<li class="nav-item">
-	       				<a class="nav-link" href="#">Introduction</a>
-	     			</li>
-	      			<li class="nav-item">
-	        			<a class="nav-link" href="#">History</a>
-	      			</li>
-	      			<li class="nav-item">
-	        			<a class="nav-link" href="#">Rules and equipment</a>
-	      			</li>
-	      			<li class="nav-item">
-	        			<a class="nav-link" href="#">Pros and cons</a>
-	      			</li>
-	      			<li class="nav-item">
-	        			<a class="nav-link" href="#">Best players</a>
-	      			</li>
-	    		</ul>
-	  		</div>
-		</nav> -->
+	</head>
+
+
 	<header>
   		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
     		<source src="C:\Users\user\WEBSite\badm.mp4" type="video/mp4" >
   		</video>
   
 	</header>
-
+	
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-
-  
-
+	
 		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top justify-content-between"> 
-			<a class="navbar-brand" href="#header">Badminton</a>
-  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="	navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    			<span class="navbar-toggler-icon"></span>
-  			</button> 
-		  	<ul class="navbar-nav">
-		    <li class="nav-item">
-		      <a class="nav-link" href="#section1">Intro</a>
-		    </li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="#section2">Section 2</a>
-		    </li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="#section3">Section 3</a>
-		    </li>
-		    <li class="nav-item dropdown">
-		      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-		        Section 4
-		      </a>
-		      <div class="dropdown-menu">
-		        <a class="dropdown-item" href="#section41">Link 1</a>
-		        <a class="dropdown-item" href="#section42">Link 2</a>
-		      </div>
-		    </li>
-		  </ul>
+					<a class="navbar-brand" href="#header">Badminton</a>
+		  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="	navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		    			<span class="navbar-toggler-icon"></span>
+		  			</button> 
+				  	<ul class="navbar-nav">
+					    <li class="nav-item">
+					      <a class="nav-link" href="#section1">Intro</a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="#section2">Section 2</a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="#section3">Section 3</a>
+					    </li>
+					    <li class="nav-item dropdown">
+						    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						        Section 4
+						    </a>
+					        <div class="dropdown-menu">
+						        <a class="dropdown-item" href="#section41">Link 1</a>
+						        <a class="dropdown-item" href="#section42">Link 2</a>
+					        </div>
+					    </li>
+				    </ul>
 		</nav>
+				 	
+										
 
-		 	
-								
+						
+		<div class="main-wrapper">
+			<div class="slide slide-one" data-background="#FF7F50">
+		    
+		    	<div id="section1" class="container bg-secondary" style="padding-top:5%;padding-bottom:5%;opacity:0.5;">
+				  	<h1 style="">Intro</h1>
+				  	<p>TEXT!</p>
+				  	<p>TEXT!</p>
+				</div>  
+		    </div>
+		  
+		    <div class="slide slide-two" data-background="#27ae60" >
+		      
+		        <div id="section2" class="container bg-secondary " style="padding-top:70px;padding-bottom:70px;opacity:0.5;">
+				   <h1>Section 2</h1>
+				   <p>TEXT</p>
+				   <p>TEXT</p>
+				</div>
+		    </div>
+		  
+		    <div class="slide slide-three" data-background="#e74c3c">
+		      
+		        <div id="section3" class="container bg-secondary" style="padding-top:70px;padding-bottom:70px;opacity:0.5;">
+				   <h1>Section 3</h1>
+				   <p>TEXT</p>
+				   <p>TEXT</p>
+				</div>
+		    </div>
+        </div>
 
-				
-
-		<div id="section1" class="container bg-danger" style="padding-top:5%padding-bottom:5%">
-		  <h1>Intro</h1>
-		  <p>TEXT!</p>
-		  <p>TEXT!</p>
-		</div>
-
-		<div id="section2" class="container bg-peach-gradient" style="padding-top:70px;padding-bottom:70px">
-		  <h1>Section 2</h1>
-		  <p>TEXT</p>
-		  <p>TEXT</p>
-		</div>
-
-		<div id="section3" class="container bg-secondary" style="padding-top:70px;padding-bottom:70px">
-		  <h1>Section 3</h1>
-		  <p>TEXT</p>
-		  <p>TEXT</p>
-		</div>
-
-		<div id="section41" class="container bg-danger" style="padding-top:70px;padding-bottom:70px">
-		  <h1>Section 4 Submenu 1</h1>
-		  <p>TTEXT</p>
-		  <p>TEXT!</p>
-		</div>
-
-		<div id="section42" class="container bg-info" style="padding-top:70px;padding-bottom:70px">
-		  <h1>Section 4 Submenu 2</h1>
-		  <p>TTEXT!</p>
-		  <p>TEXT!</p>
-		</div>
-
-
-		<footer  class="container-fluid ">
-  			<p>Posted by: Natalya Gaiduchok</p>
-  			<p>Contact information: 
-  				<a href="mailto:natalia.gaiduchok217@gmail.com">natalia.gaiduchok217@gmail.com</a>
-  			</p>
-  			<p>Lviv 2019</p>
+		<footer  class="container-fluid " class="footer" >
+		  	<p >Posted by: Natalya Gaiduchok</p>
+		  	<p>Contact information: 
+		  		<a href="mailto:natalia.gaiduchok217@gmail.com">natalia.gaiduchok217@gmail.com</a>
+		  	</p>
+		  	<p>Lviv 2019</p>
 		</footer>
 
 
+				
+
+
 	</body>
+
+
 </html>
 
 
