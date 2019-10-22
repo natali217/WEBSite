@@ -1,21 +1,31 @@
-* { box-sizing: border-box }
+* { 
+  box-sizing: border-box 
+}
+
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 body {
   font-family: 'Coming Soon', cursive;
   transition: background 1s ease;
-  background: #DC143C;
+  background: #F0F8FF;
 }
 
-p {
+/*p {
   color: black;
-  font-size: 2em;
+  font-size: 12pt;
   text-align: center;
-  font-weight:bolder;
-}
+  font-weight: bolder;
+}*/
 
 a {
   text-decoration: none;
 }
+
 header {
   position: relative;
   background-color: black;
@@ -23,7 +33,7 @@ header {
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
-
+  border: groove black 5px;
 }
 
 header video {
@@ -40,14 +50,25 @@ header video {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+
 .navbar{
   opacity: 0.9;
-
+  font-size: 17pt;
 }
 
-.footer {
+.navbar-default .navbar-toggle .icon-bar {
   background-color: rgba(255, 255, 255, 0.8);
-  color: #000;
-  padding-top: 15px;
-  margin-top: 10px;
 }
+
+#section1{
+  margin: 5%;
+  padding:2%;
+  border: black 15px double;
+  background-image: url("pictures/back1.jpg");
+  background-size: cover;
+/*  opacity:0.8;
+*/  text-align: center;
+  color: bold white;
+  font-size: 30pt;
+}
+
