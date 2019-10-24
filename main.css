@@ -64,7 +64,7 @@ header video {
   margin: 5%;
   padding:2%;
   border: black 15px double;
-  background-image: url("pictures/back1.jpg");
+  background-image: url("pictures/back.jpg");
   background-size: cover;
 /*  opacity:0.8;
 */  text-align: center;
@@ -72,3 +72,73 @@ header video {
   font-size: 30pt;
 }
 
+.carousel-caption {
+  background-color: rgba(241, 83, 136, 0.568);
+}
+
+.carousel-caption h4 {
+  font-size: 1.5rem;
+}
+
+span.carousel-control-prev-icon {
+  background-color: rgb(27, 94, 121);
+}
+
+span.carousel-control-next-icon {
+  background-color: rgb(27, 94, 121);
+}
+
+@media screen and (max-width: 768px) { 
+  .carousel-caption h4 {
+      font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel-caption h4 {
+    font-size: 1.5rem;
+  }
+} 
+
+@media screen and (max-width: 992px) { 
+    .carousel-caption h4 {
+      font-size: 1.25rem;
+  }
+}
+
+
+@media screen and (max-width: 576px) { 
+    .carousel-caption h4 {
+      font-size: 1rem;
+  }
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+#section2 {
+  padding-top: 1rem;
+  overflow: hidden;
+}
+
+.services-item {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background: linear-gradient(225deg,  rgba(241, 83, 136, 0.8) 0%, rgba(91, 201, 245, 0.8) 100%);
+  padding: 15px;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.services-title {
+  color: rgb(27, 94, 121);
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+}
+
+.services-text {
+  color: #FFFFFF;
+  text-align: left;
+}
