@@ -1,6 +1,6 @@
-* { 
+/** { 
   box-sizing: border-box 
-}
+}*/
 
 html {
   -webkit-background-size: cover;
@@ -22,9 +22,7 @@ body {
   font-weight: bolder;
 }*/
 
-a {
-  text-decoration: none;
-}
+
 
 header {
   position: relative;
@@ -33,7 +31,6 @@ header {
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
-  border: groove black 5px;
 }
 
 header video {
@@ -60,6 +57,148 @@ header video {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.animated-navbar-toggler-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  /* Safari, Chrome, Android, IOS */
+  -webkit-transform: rotate(0deg);
+  /* Mozila Firefox */
+  -moz-transform: rotate(0deg);
+  /* Opera */
+  -o-transform: rotate(0deg);
+  /* Internet Explorer */
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.animated-navbar-toggler-icon span {
+  display: block;
+  background: #fff;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg); 
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  -ms-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.animated-navbar-toggler-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-navbar-toggler-icon span:nth-child(2), 
+.animated-navbar-toggler-icon span:nth-child(3) {
+  top: 10px;
+}
+
+.animated-navbar-toggler-icon span:nth-child(4) {
+  top: 20px;
+}
+
+.animated-navbar-toggler-icon.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.animated-navbar-toggler-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.animated-navbar-toggler-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.animated-navbar-toggler-icon.open span:nth-child(4) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+  .heading {
+    font-size: 4rem;
+  }
+} 
+
+@media screen and (max-width: 992px) { 
+    .heading {
+      font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+      font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 576px) { 
+    .heading {
+      font-size: 2.5rem;
+  }
+}
+
+
+.row {
+  justify-content: center;
+}
+
+.home .container-fluid {
+  z-index: 10;
+}
+
+.frame {
+  padding: 25px;
+  border: 4px dotted rgba(241, 83, 136, 0.8);
+}
+
+.title {
+  display: block;
+  font-family: 'Coming Soon', cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 35px;
+  
+}
+
 #section1{
   margin: 5%;
   padding:2%;
@@ -73,72 +212,45 @@ header video {
 }
 
 .carousel-caption {
-  background-color: rgba(241, 83, 136, 0.568);
+  background-color: rgba(62, 62, 64, 0.7);
 }
 
 .carousel-caption h4 {
   font-size: 1.5rem;
 }
 
-span.carousel-control-prev-icon {
-  background-color: rgb(27, 94, 121);
-}
-
-span.carousel-control-next-icon {
-  background-color: rgb(27, 94, 121);
-}
-
-@media screen and (max-width: 768px) { 
-  .carousel-caption h4 {
-      font-size: 1.25rem;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .carousel-caption h4 {
-    font-size: 1.5rem;
-  }
-} 
-
-@media screen and (max-width: 992px) { 
-    .carousel-caption h4 {
-      font-size: 1.25rem;
-  }
-}
 
 
-@media screen and (max-width: 576px) { 
-    .carousel-caption h4 {
-      font-size: 1rem;
-  }
-}
-
-#sticky-footer {
-  flex-shrink: none;
-}
 
 #section2 {
-  padding-top: 1rem;
+  padding: 1rem;
   overflow: hidden;
 }
 
-.services-item {
+.box-item {
   margin-top: 20px;
-  margin-bottom: 10px;
-  background: linear-gradient(225deg,  rgba(241, 83, 136, 0.8) 0%, rgba(91, 201, 245, 0.8) 100%);
-  padding: 15px;
-  border-radius: 10px;
-  height: 200px;
+  margin-bottom: 30px;
+  background-image: url("pictures/p2.jpg");
+  background-size: cover;
+  padding: 20px;
+  height: 250px;
 }
 
-.services-title {
-  color: rgb(27, 94, 121);
+.box-title {
+  color: black bold;
   text-transform: uppercase;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: left;
+  font-family: 'Coming Soon', cursive;
+  text-align: center;
+  font-size: 15pt;
 }
 
-.services-text {
-  color: #FFFFFF;
-  text-align: left;
+.box-text {
+  color: black bold;
+  text-align: center;
+}
+
+
+
+#sticky-footer {
+  flex-shrink: none;
 }
