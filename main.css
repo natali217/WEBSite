@@ -17,15 +17,6 @@ body {
   margin: 0;
 }
 
-/*p {
-  color: black;
-  font-size: 12pt;
-  text-align: center;
-  font-weight: bolder;
-}*/
-
-
-
 header {
   position: relative;
   background-color: black;
@@ -54,6 +45,7 @@ header video {
   opacity: 0.9;
   font-size: 17pt;
 }
+
 .nav-link,
 .navbar-brand {
   color: white;
@@ -172,44 +164,25 @@ header video {
   justify-content: center;
 }
 
-.home .container-fluid {
-  z-index: 10;
-}
-
-.home {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 72px);
-  transition: transform 0.5s ease-in-out;
-  background-attachment: fixed;
-  /* background-attachment: scroll; */
-  background: linear-gradient(225deg,  rgba(241, 83, 136, 0.8) 0%, rgba(91, 201, 245, 0.8) 100%), url("../images/lol.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .title {
   display: block;
   font-family: 'Coming Soon', cursive;
-  font-size: 40px;
+  font-size: 2em;
   text-transform: uppercase;
-  margin: 35px;
+  margin: 5%;
   
 }
 
 #section1{
-  margin: 5%;
+  margin-top: 3%;
   padding:2%;
-  border: black 15px double;
+  border: grey 10px solid;
   background-image: url("pictures/back.jpg");
   background-size: cover;
-/*  opacity:0.8;
-*/  text-align: center;
-  color: bold white;
-  font-size: 30pt;
+  text-align: center;
+  font-size: 1.9em;
 }
-
-
 
 
 #section2 {
@@ -224,7 +197,7 @@ header video {
   background-image: url("pictures/p2.jpg");
   background-size: cover;
   padding: 20px;
-  height: 250px;
+  height: 90%;
 }
 
 .box-title {
@@ -232,30 +205,13 @@ header video {
   text-transform: uppercase;
   font-family: 'Coming Soon', cursive;
   text-align: center;
-  font-size: 15pt;
+  font-size: 1em;
 }
 
 .box-text {
   color: black bold;
   text-align: center;
-}
-
-@media screen and (max-width: 992px) { 
-  .box-item {
-    height: 225px;
-  }
-}
-
-@media screen and (max-width: 768px) { 
-  .box-item {
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 576px) { 
-  .box-item {
-    height: 135px;
-  }
+  font-size: 1em;
 }
 
 #section4 {
@@ -270,15 +226,6 @@ header video {
   font-size: 1.5rem;
 }
 
-
-
-span.carousel-control-prev-icon {
-  background-color: rgb(27, 94, 121);
-}
-
-span.carousel-control-next-icon {
-  background-color: rgb(27, 94, 121);
-}
 
 @media screen and (max-width: 768px) { 
   .carousel-caption h4 {
@@ -307,6 +254,3 @@ span.carousel-control-next-icon {
 
 
 
-#sticky-footer {
-  flex-shrink: none;
-}
