@@ -13,7 +13,7 @@ This website is a promo landing page about badminton
 
 ## General info
 This website is a promo landing page about badminton designed to promote badminton and encourage people to play it.
-###Content:
+### Content:
 
   - advantages of playing badminton
   - disadvantages of playing badminton
