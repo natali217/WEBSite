@@ -41,6 +41,8 @@ header video {
   transform: translateX(-50%) translateY(-50%);
 }
 
+/*Navigation*/
+
 .navbar{
   opacity: 0.9;
   font-size: 17pt;
@@ -152,6 +154,8 @@ header video {
   -webkit-tap-highlight-color: transparent;
 }
 
+/*Main*/
+
 .pad {
   padding-top: 20px;
   margin-top: 20px;
@@ -171,17 +175,18 @@ header video {
   font-size: 2em;
   text-transform: uppercase;
   margin: 5%;
+  text-decoration: underline;
   
 }
 
 #section1{
   margin-top: 3%;
   padding:2%;
-  border: grey 10px solid;
+  border: grey 7px solid;
   background-image: url("pictures/back.jpg");
   background-size: cover;
   text-align: center;
-  font-size: 1.9em;
+  font-size: 2em;
 }
 
 
@@ -190,6 +195,10 @@ header video {
   overflow: hidden;
 }
 
+#section3 {
+  padding-top: 1rem;
+  overflow: hidden;
+}
 
 .box-item {
   margin-top: 20px;
@@ -205,11 +214,11 @@ header video {
   text-transform: uppercase;
   font-family: 'Coming Soon', cursive;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .box-text {
-  color: black bold;
+  color: black;
   text-align: center;
   font-size: 1em;
 }
